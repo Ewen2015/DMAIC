@@ -1,0 +1,48 @@
+---
+title: "5W2H"
+author: "Enqun Wang"
+date: "April 21, 2016"
+output: html_document
+---
+
+#### Why?
+
+*Why is it important to solve this problem? Why is it important to improve this process? Formulate in terms of expected benefits* 
+
+Trading volume reflects the status of operation of the P2P company objectively. It provides further information for decision-making and to finally make more profit.
+
+#### Who?
+
+*Who is involved in the process? Who is affected by the problem? Who is interested in solving the problem?*
+
+All staffs, shareholder of the company, and managers involved to the company are interested in the problem. Especially, the operation executive officer (OEO) is interested in this problem and he makes further decision based on this process. And thus, all the other departments can also be affected by this process, in which some strategies are adjusted.
+
+#### Where?
+
+*Where is the problem located? In which processes do the problems occur?*
+
+This problem is located in the process of operation and operation management. <u> In marketing potentially?  In communications?</u>
+
+#### When?
+
+*When did or does the problem happen? How often did or does the problem happen? When did the problem start?*
+
+This problem happens on each workday. The problem exists along with the company; so it started since the company established. However, as our project started on March 4, 2015, we treat the problem starting on that day.
+
+#### What?
+
+*What is the defect? What activities, parts and procedures are involved? What happens, when the problems occur?*
+
+Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project. The strategies we make cannot effectively response to the variation in the finance market, which can lead to the defect. 
+
+#### How?
+
+*How do you know it is a problem? How was the problem identified? How often does it happen?*
+
+It is a problem for that it can lead to the decrease of the trading volume. It is defined as no effective reaction or response to the fluctuation of the finance market. The problem happening follows the periods of the strategies; as a result, it can happen every day. 
+
+#### How many?
+
+*How many defects/units/people? How much money was spent? Do these numbers change or do they stay the same?*
+
+In the case of the project, the factor of financial products of the company and the the factor of company funds can lead to the defects. The money spent is hard to determined. The number of defects is relatively constant, for the whole financial environment is pretty mild. 
