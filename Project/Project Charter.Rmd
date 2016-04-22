@@ -1,0 +1,54 @@
+---
+title: "Project Charter"
+author: "Enqun Wang"
+date: "April 21, 2016"
+output: html_document
+---
+
+#### Problem Statement:
+
+Trading volume reflects the status of operation of the P2P company objectively. This problem happens on each workday in a three-month period started from March 4, 2015. Considering the issue of confidential policy, we can only collect the data of 3 months. As a result, it is reasonable to assume that we are at the end of the date that the data is collected to do the project. Our project is based on observational data, so we can hardly get a cause-and-effect conclusion. Beside, as the data only covers three months, we cannot find solution considering seasonal variation. 
+
+> It would be good to capture the trading volume as it is today – how many shares? how many companies? What is the rate of increase?  What is the desired rate?, …  Can you tell me what a defect is?
+
+#### Project Objective:
+
+Increase the trading volume of the platform <u>(by how much in what time frame? – this would be a company objective…)</u> from the the date the project started, and achieve a goal that the company is in a healthy improving state. Our project has no specific date of completion; in another word, the project is through the whole life of the company.
+
+#### Project Team
+
+Name
+Role
+Comments
+Phone
+Enqun Wang
+Operation Analyst.
+Organize the project and assign the detailed work to team members.
+7202315851
+Yiyan Zhou
+Operation Analyst.
+Finish what the leader assigned and give advises.
+9702945303
+Chee-Yong Tan
+Operation executive officer
+Adjust the strategies. 
+
+#### Project Definition and Scoping
+
+
+**Critical to Satisfaction (linkage to customer):**
+
+The customer, operation executive officer (OEO), is interested in this problem because he makes further decision based on this process.
+And what does he want to see?
+
+**Defect Definition (include opportunity):**
+
+Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project.  Give me an operational definition of significant, material
+
+**Scope of Project:**
+
+The project started in March 4, 2015, and the data is collected for 3 months. Assuming that we are at the end of the data collected to do the project. 
+
+
+
+
