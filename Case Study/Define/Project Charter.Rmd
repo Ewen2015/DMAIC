@@ -35,6 +35,22 @@ Adjust the strategies.
 
 #### Project Definition and Scoping
 
+**Metrics (unit of measure)**
+
+| variables  | variables  |
+|---|---|
+|Trading volume   |Recode the total trading volume in the platform in 24 hours. Unit: Chinese Yuan.   |
+|Products weighted rate of return   |Recode the weighted rate of return for the products of the day. Weight: Transaction amount; Unit: %. |
+|Product weighted term   |Recode the product weighted term of the day. Weight: Transaction amount; Unit: month.   |
+|Amount of receiving the lucky money   |Recode the amount of users’ receiving lucky money of the day. Unit: Chinese Yuan.|
+|Amount of using the lucky money   |Recode the total amount of users’ using the lucky money of the day. Unit: Chinese Yuan.|
+|Total account balance   |Record all users’ total account balance at 12:00 am. Unit: Chinese Yuan|
+|Net capital inflows|Recode the platform’s (Capital inflows - Capital outflows). Unit: Chinese Yuan.|
+|The closing price of treasury bonds repurchase in 7 days.|The closing price of treasury bonds repurchase in 7 days. Price: APR; Unit: %.|
+|One day term weighted interbank rates|The weighted interbank rates in inter-bank market. Unit: %.|
+|Overnight SHIBOR|Short-term interest rates among banks lending to each other applicable. Unit: %.|
+|Closing price of Shanghai Stock Exchange.|Everyday’s closing price of Shanghai Stock Exchange|
+|Growth enterprise market(GEM) index|The weighted average of the total shares in the GEM, regarding the starting date as Datum point.|
 
 **Critical to Satisfaction (linkage to customer):**
 
