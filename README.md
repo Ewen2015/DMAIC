@@ -1,8 +1,10 @@
-# DMAIC for Trading Volume of Internet Finance Company in China
+# DMAIC
 
 #### DMAIC
 
 DMAIC is a structured problem-solving methology widely used in business. The letters are an acronym for the five phases of Six Sigma improvement: **Define-Measure-Analyze-Improve-Control**. These phases lead a team logically from defining a problem through implemening solutios linked to underlying causes, and establishing best practices to make sure the solutions stay in place.
+
+### Case Study: Trading Volume of An Internet Finance Company in China
 
 #### Project Statement
 
