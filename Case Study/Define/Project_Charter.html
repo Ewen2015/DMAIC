@@ -122,11 +122,11 @@ $(document).ready(function () {
 
 <div id="problem-statement" class="section level4">
 <h4>Problem Statement:</h4>
-<p>The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started from January 1, 2016 to Jube 30, 2016 (the first two quaters in 2016). The data are colocted since the begining of the project to today (April 20) expect weekends, and all the data are colected from the database of the company. According the experience of the operation executive officer of the company, the distribution of increase rath of trading volume can be regarded as normality; and a rate of 3% should be a baseline. A defect can be difined as a increase rate that is lower than -10%.</p>
+<p>Data from January throughout April, 2016, from First P2P, reflects an average 1.0370% five-day incrase rate of trading volume of the platform (ranges from 0.5714% to 1.6497%). Based on the financial professinal knowledge, operation condition of the company, and the financial market environment, it is believed that a five-day increase rate is normaly distributed, and a value that less than 0.83% is regarded as a defective value (currently, around 15% defective values). The incfluence factors are basicly from four aspects: financial products factors, platform capital factors, price of fund factors, and alternative financial products factors.</p>
 </div>
 <div id="project-objective" class="section level4">
 <h4>Project Objective:</h4>
-<p>Increase the increase rate of the trading volume from 3% to the 5% by the end of the second quarter.</p>
+<p>Increase the five-day increase rate of the trading volume from 1.04% to the 1.10% by the end of the second quarter (June 30, 2016), therefore the proportion of defective values drop from 15% to 8.6% (71% improvement).</p>
 </div>
 <div id="project-team" class="section level4">
 <h4>Project Team</h4>
@@ -170,74 +170,13 @@ $(document).ready(function () {
 <div id="project-definition-and-scoping" class="section level4">
 <h4>Project Definition and Scoping</h4>
 <p><strong>Metrics (unit of measure)</strong></p>
-<table style="width:11%;">
-<colgroup>
-<col width="5%"></col>
-<col width="5%"></col>
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">variables</th>
-<th align="left">variables</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Trading volume</td>
-<td align="left">Recode the total trading volume in the platform in 24 hours. Unit: Chinese Yuan.</td>
-</tr>
-<tr class="even">
-<td align="left">Products weighted rate of return</td>
-<td align="left">Recode the weighted rate of return for the products of the day. Weight: Transaction amount; Unit: %.</td>
-</tr>
-<tr class="odd">
-<td align="left">Product weighted term</td>
-<td align="left">Recode the product weighted term of the day. Weight: Transaction amount; Unit: month.</td>
-</tr>
-<tr class="even">
-<td align="left">Amount of receiving the lucky money</td>
-<td align="left">Recode the amount of users’ receiving lucky money of the day. Unit: Chinese Yuan.</td>
-</tr>
-<tr class="odd">
-<td align="left">Amount of using the lucky money</td>
-<td align="left">Recode the total amount of users’ using the lucky money of the day. Unit: Chinese Yuan.</td>
-</tr>
-<tr class="even">
-<td align="left">Total account balance</td>
-<td align="left">Record all users’ total account balance at 12:00 am. Unit: Chinese Yuan</td>
-</tr>
-<tr class="odd">
-<td align="left">Net capital inflows</td>
-<td align="left">Recode the platform’s (Capital inflows - Capital outflows). Unit: Chinese Yuan.</td>
-</tr>
-<tr class="even">
-<td align="left">The closing price of treasury bonds repurchase in 7 days.</td>
-<td align="left">The closing price of treasury bonds repurchase in 7 days. Price: APR; Unit: %.</td>
-</tr>
-<tr class="odd">
-<td align="left">One day term weighted interbank rates</td>
-<td align="left">The weighted interbank rates in inter-bank market. Unit: %.</td>
-</tr>
-<tr class="even">
-<td align="left">Overnight SHIBOR</td>
-<td align="left">Short-term interest rates among banks lending to each other applicable. Unit: %.</td>
-</tr>
-<tr class="odd">
-<td align="left">Closing price of Shanghai Stock Exchange.</td>
-<td align="left">Everyday’s closing price of Shanghai Stock Exchange</td>
-</tr>
-<tr class="even">
-<td align="left">Growth enterprise market(GEM) index</td>
-<td align="left">The weighted average of the total shares in the GEM, regarding the starting date as Datum point.</td>
-</tr>
-</tbody>
-</table>
+<p>Five-day incrase rate (%) of trading volume of the platform.</p>
 <p><strong>Critical to Satisfaction (linkage to customer):</strong></p>
-<p>The customer, operation executive officer (OEO), is interested in this problem because he makes further decision based on this process. And what does he want to see?</p>
+<p>Individual investors and companies with financing needs are two major types of our clients. They are interested in Five-day incrase rate (%); because an relatively high five-day increase rate of the trading volumn can result financial products of lower prices, therefore individual investors can earn more money and companies looking for finance can save more money.</p>
 <p><strong>Defect Definition (include opportunity):</strong></p>
-<p>Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project. Give me an operational definition of significant, material</p>
+<p>Any five-day increase rate less than 0.83% is regarded as a defective value. Currently, there are around 15% defective values.</p>
 <p><strong>Scope of Project:</strong></p>
-<p>The project started in March 4, 2015, and the data is collected for 3 months. Assuming that we are at the end of the data collected to do the project.</p>
+<p>The project focuses on the first two quarters of 2016, from January 1, 2016 to June 30, 2016. The data is collected at April 20, 2016 from the database of the company, thus we scope this project from January 1 to April 20. The data set includes all the infomation we need for weekdays, which means 74 observations.</p>
 </div>
 
 
