@@ -7,7 +7,7 @@ output: html_document
 
 #### Problem Statement:
 
-The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started from January 1, 2016 to Jube 30, 2016 (the first two quaters in 2016). The data are colocted since the begining of the project to today (April 20) expect weekends, and all the data are colected from the database of the company. According the experience of the operation executive officer of the company, the distribution of increase rath of trading volume can be regarded as normality; and a rate of 3% should be a baseline. A defect can be difined as a increase rate that is lower than -10%.
+The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started from January 1, 2016 to June 30, 2016 (the first two quarters in 2016). The data are collected since the begining of the project to today (April 20) expect weekends, and all the data are colected from the database of the company. According the experience of the operation executive officer of the company, the distribution of increase rath of trading volume can be regarded as normality; and a rate of 3% should be a baseline. A defect can be difined as a increase rate that is lower than -10%.
 
 #### Project Objective:
 
@@ -42,17 +42,15 @@ Increase the increase rate of the trading volume from 3% to the 5% by the end of
 
 **Critical to Satisfaction (linkage to customer):**
 
-The customer, operation executive officer (OEO), is interested in this problem because he makes further decision based on this process.
-And what does he want to see?
+Individual investors and finance companies are two major types of our clients. They are interested in this problem because both of them would like to see an increase in increase rate of the trading volumn, so that they can benefit from this process.
 
 **Defect Definition (include opportunity):**
 
-Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project.  Give me an operational definition of significant, material
+Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project.  We should avoid low increase rate, thus we regard the increase rate lower than -10% as defect.
 
 **Scope of Project:**
 
-The project started in March 4, 2015, and the data is collected for 3 months. Assuming that we are at the end of the data collected to do the project. 
-
+The project focuses on the first two quarters of 2016, from January 1, 2016 to June 30, 2016. The data is collected at April 20, 2016 from the database of the company, thus we scope this project from January 1 to April 20. The data set includes all the infomation we need for weekdays, which means 74 observations.
 
 
 
