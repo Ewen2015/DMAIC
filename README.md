@@ -4,7 +4,7 @@
 
 DMAIC is a structured problem-solving methology widely used in business. The letters are an acronym for the five phases of Six Sigma improvement: **Define-Measure-Analyze-Improve-Control**. These phases lead a team logically from defining a problem through implemening solutios linked to underlying causes, and establishing best practices to make sure the solutions stay in place.
 
-<img src="http://cdn2.hubspot.net/hub/326641/file-1125016795-png/damic.png?t=1461439026086&width=548" alt="Smiley face" height="400" width="400">
+<img src="http://cdn2.hubspot.net/hub/326641/file-1125016795-png/damic.png?t=1461439026086&width=548" alt="Smiley face" height="400" width="400" align="middle">
 
 ### Case Study: 
 
