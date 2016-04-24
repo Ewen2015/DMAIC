@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 #### Philosophy
 
 The DMAIC procedure can be regarded as *an application of optimization* in industry or organization. 
