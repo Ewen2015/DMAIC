@@ -7,13 +7,11 @@ output: html_document
 
 #### Problem Statement:
 
-The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started since This problem happens on each workday in a three-month period started from January 4, 2016. Considering the issue of confidential policy, we can only collect the data of 3 months. As a result, it is reasonable to assume that we are at the end of the date that the data is collected to do the project. Our project is based on observational data, so we can hardly get a cause-and-effect conclusion. Beside, as the data only covers three months, we cannot find solution considering seasonal variation. 
-
-> It would be good to capture the trading volume as it is today – how many shares? how many companies? What is the rate of increase?  What is the desired rate?, …  Can you tell me what a defect is?
+The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started from January 1, 2016 to Jube 30, 2016 (the first two quaters in 2016). The data are colocted since the begining of the project to today (April 20) expect weekends, and all the data are colected from the database of the company. According the experience of the operation executive officer of the company, the distribution of increase rath of trading volume can be regarded as normality; and a rate of 3% should be a baseline. A defect can be difined as a increase rate that is lower than -10%.
 
 #### Project Objective:
 
-Increase the trading volume of the platform <u>(by how much in what time frame? – this would be a company objective…)</u> from the the date the project started, and achieve a goal that the company is in a healthy improving state. Our project has no specific date of completion; in another word, the project is through the whole life of the company.
+Increase the increase rate of the trading volume from 3% to the 5% by the end of the second quarter.
 
 #### Project Team
 
