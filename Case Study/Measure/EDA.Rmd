@@ -1,0 +1,20 @@
+---
+title: "EDA"
+author: "Enqun Wang"
+date: "April 23, 2016"
+output: html_document
+---
+
+```{r}
+setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/Measure")
+
+df = read.csv("data.csv", header = T)[-1,]
+str(df)
+hist(df$Increase.rate, br = 40)
+summary(df$Increase.rate)
+```
+
+```{r}
+baseline = quantile(df$Increase.rate, 0.2)
+```
+
