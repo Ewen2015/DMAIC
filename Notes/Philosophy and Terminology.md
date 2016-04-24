@@ -1,6 +1,6 @@
 #### Philosophy
 
-The DMAIC procedure can be regarded as an application of optimization in industry or organization. 
+The DMAIC procedure can be regarded as *an application of optimization* in industry or organization. 
 
 #### Terminology
 
@@ -9,4 +9,4 @@ The DMAIC procedure can be regarded as an application of optimization in industr
 - **Goal:** Y of future data after **control**.
 - **Baseline defect:** The defect (a cost function) of baseline.
 - **Goal defect:** The defect (a cost function) of goal.
-- **Improvement:** $Improvement \frac{Baseline defect - Goal defect}{Baseline defect}$. Usually set as 70%. 
+- **Improvement:** $$Improvement = \frac{Baseline defect - Goal defect}{Baseline defect}$$. Usually set as 70%. 
