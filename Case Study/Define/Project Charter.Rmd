@@ -5,11 +5,11 @@ date: "April 21, 2016"
 output: html_document
 ---
 
-#### Problem Statement:
+#### Problem Statement
 
 Data from January throughout April, 2016, from First P2P, reflects an average 1.0370% five-day incrase rate of trading volume of the platform (ranges from 0.5714% to 1.6497%). Based on the financial professinal knowledge, operation condition of the company, and the financial market environment, it is believed that a five-day increase rate is normaly distributed, and a value that less than 0.83% is regarded as a defective value (currently, around 15% defective values). The incfluence factors are basicly from four aspects: financial products factors, platform capital factors, price of fund factors, and alternative financial products factors. 
 
-#### Project Objective:
+#### Project Objective
 
 Increase the five-day increase rate of the trading volume from 1.04% to the 1.10% by the end of the second quarter (June 30, 2016), therefore the proportion of defective values drop from 15% to 8.6% (71% improvement). 
 
@@ -23,7 +23,7 @@ Increase the five-day increase rate of the trading volume from 1.04% to the 1.10
 
 #### Project Definition and Scoping
 
-**Metrics (unit of measure)**
+**Metrics (unit of measure):**
 
 Five-day incrase rate (%) of trading volume of the platform.
 
@@ -38,7 +38,3 @@ Any five-day increase rate less than 0.83% is regarded as a defective value. Cur
 **Scope of Project:**
 
 The project focuses on the first two quarters of 2016, from January 1, 2016 to June 30, 2016. The data is collected at April 20, 2016 from the database of the company, thus we scope this project from January 1 to April 20. The data set includes all the infomation we need for weekdays, which means 74 observations.
-
-
-
-
