@@ -1,5 +1,5 @@
 ---
-title: "EDA"
+title: "Exploratory Data Analysis"
 author: "Enqun Wang"
 date: "April 23, 2016"
 output: html_document
@@ -7,32 +7,44 @@ output: html_document
 
 #### Input the data
 
-```{r}
-setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/Measure")
+```{r message=FALSE}
+setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
+
+require(dplyr)
 
 df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-1])
-str(df)
-summary(df)
+df <- tbl_df(df)
+glimpse(df)
 ```
 
-#### Define defect and goal
+#### Defect, Baseline and Goal
 
 ```{r}
 summary(df$Increase.Rate.5Day)
-baseline = mean(df$Increase.Rate.5Day)
-sd = sd(df$Increase.Rate.5Day)
-
-hist(df$Increase.Rate.5Day, br = 30, freq = F)
-x = seq(-0.65, 1.65, 0.01)
-lines(x, dnorm(x, baseline, sd))
 
 defect.value = quantile(df$Increase.Rate.5Day, 0.15)
+
+baseline.IR = mean(df$Increase.Rate.5Day)
+sd.IR = sd(df$Increase.Rate.5Day)
+
 baseline.defect = sum(df$Increase.Rate.5Day < defect.value)/sum(df$Increase.Rate.5Day)
 
 goal = 1.10
-goal.defect = pnorm(0.83, goal, sd)
+goal.defect = pnorm(defect.value, goal, sd.IR)
 
 improvement = (baseline.defect - goal.defect)/goal.defect
-improvement
+
+hist(df$Increase.Rate.5Day, br = 30, freq = F)
+x = seq(-0.65, 1.65, 0.01)
+lines(x, dnorm(x, baseline.IR, sd.IR), col = "green")
+abline(v = defect.value, col = "red")
+lines(x, dnorm(x, goal, sd.IR), col = "blue")
 ```
+
+
+
+
+
+
+
 

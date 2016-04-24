@@ -2,18 +2,18 @@
 title: "Project Charter"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "April 21, 2016"
-output: html_document
+output: pdf_document
 ---
 
-#### Problem Statement
+### Problem Statement
 
-Data from January throughout April, 2016, from First P2P, reflects an average 1.0370% five-day incrase rate of trading volume of the platform (ranges from 0.5714% to 1.6497%). Based on the financial professinal knowledge, operation condition of the company, and the financial market environment, it is believed that a five-day increase rate is normaly distributed, and a value that less than 0.83% is regarded as a defective value (currently, around 15% defective values). The incfluence factors are basicly from four aspects: financial products factors, platform capital factors, price of fund factors, and alternative financial products factors. 
+Data from January throughout April, 2016, from First P2P, reflects an *average 1.0370%* five-day incrase rate of trading volume of the platform with around *15% defiftive values*. Based on the financial professinal knowledge, operation condition of the company, and the financial market environment, it is believed that a five-day increase rate is normaly distributed with constant variance, and a value that *less than 0.83% (assumed to be constant in our project)* is regarded as a defective value, which can lead to a reduction in benifit of the company.
 
-#### Project Objective
+### Project Objective
 
-Increase the five-day increase rate of the trading volume from 1.04% to the 1.10% by the end of the second quarter (June 30, 2016), therefore the proportion of defective values drop from 15% to 8.6% (71% improvement). 
+Increase the five-day increase rate of the trading volume from *1.04%* to the *1.10%* by the end of the second quarter (June 30, 2016); therefore the proportion of defective values drop from *15%* to *9%* (*67%* improvement), given the normality with constant variance assumption.
 
-#### Project Team
+### Project Team
 
 | Name | Role | Comments | Phone |
 |-------------|----------------|------------------------------------|-------------|
@@ -21,20 +21,21 @@ Increase the five-day increase rate of the trading volume from 1.04% to the 1.10
 |Yiyan Zhou |Operation Analyst |Finish what the leader assigned and give advises |(970) 294 5303 |
 |Chee-Yong Tan |Operation executive officer |Adjust the strategies | |
 
-#### Project Definition and Scoping
+### Project Definition and Scoping
 
 **Metrics (unit of measure):**
 
-Five-day incrase rate (%) of trading volume of the platform.
+- The five-day incrase rate (%) of trading volume.
+- The percentage (%) of five-day incrase rate of trading volume less than 0.83%. 
 
 **Critical to Satisfaction (linkage to customer):**
 
-Individual investors and companies with financing needs are two major types of our clients. They are interested in Five-day incrase rate (%); because an relatively high five-day increase rate of the trading volumn can result financial products of lower prices, therefore individual investors can earn more money and companies looking for finance can save more money.
+Individual investors and companies with financing needs are two major types of our clients. An relatively high percentage (%) of five-day incrase rate of trading volume less than 0.83% can result financial products of higher prices, therefore individual investors would earn less money and companies looking for finance would waste more money. Furthermore, it might lead to a reduction in benifit of the internet finance company.
 
 **Defect Definition (include opportunity):**
 
-Any five-day increase rate less than 0.83% is regarded as a defective value. Currently, there are around 15% defective values.
+Any five-day increase rate less than 0.83% is regarded as a defective value, which can result financial products of higher prices, therefore individual investors would earn less money and companies looking for finance would waste more money. Furthermore, it might lead to a reduction in benifit of the internet finance company. We assume that the criteria value (0.83%) is a constant in the scope of our project.
 
 **Scope of Project:**
 
-The project focuses on the first two quarters of 2016, from January 1, 2016 to June 30, 2016. The data is collected at April 20, 2016 from the database of the company, thus we scope this project from January 1 to April 20. The data set includes all the infomation we need for weekdays, which means 74 observations.
+The project focuses on the first two quarters of 2016, from January 1, 2016 to June 30, 2016. The data is collected at April 20, 2016 from the database of the company, thus we scope this project from January 1 to April 20.
