@@ -7,11 +7,11 @@ output: html_document
 
 #### Problem Statement:
 
-The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started from January 1, 2016 to June 30, 2016 (the first two quarters in 2016). The data are collected since the begining of the project to today (April 20) expect weekends, and all the data are colected from the database of the company. According the experience of the operation executive officer of the company, the distribution of increase rath of trading volume can be regarded as normality; and a rate of 3% should be a baseline. A defect can be difined as a increase rate that is lower than -10%.
+Data from January throughout April, 2016, from First P2P, reflects an average 1.0370% five-day incrase rate of trading volume of the platform (ranges from 0.5714% to 1.6497%). Based on the financial professinal knowledge, operation condition of the company, and the financial market environment, it is believed that a five-day increase rate is normaly distributed, and a value that less than 0.83% is regarded as a defective value (currently, around 15% defective values). The incfluence factors are basicly from four aspects: financial products factors, platform capital factors, price of fund factors, and alternative financial products factors. 
 
 #### Project Objective:
 
-Increase the increase rate of the trading volume from 3% to the 5% by the end of the second quarter.
+Increase the five-day increase rate of the trading volume from 1.04% to the 1.10% by the end of the second quarter (June 30, 2016), therefore the proportion of defective values drop from 15% to 8.6% (71% improvement). 
 
 #### Project Team
 
@@ -25,32 +25,20 @@ Increase the increase rate of the trading volume from 3% to the 5% by the end of
 
 **Metrics (unit of measure)**
 
-| variables  | variables  |
-|---|---|
-|Trading volume   |Recode the total trading volume in the platform in 24 hours. Unit: Chinese Yuan.   |
-|Products weighted rate of return   |Recode the weighted rate of return for the products of the day. Weight: Transaction amount; Unit: %. |
-|Product weighted term   |Recode the product weighted term of the day. Weight: Transaction amount; Unit: month.   |
-|Amount of receiving the lucky money   |Recode the amount of users’ receiving lucky money of the day. Unit: Chinese Yuan.|
-|Amount of using the lucky money   |Recode the total amount of users’ using the lucky money of the day. Unit: Chinese Yuan.|
-|Total account balance   |Record all users’ total account balance at 12:00 am. Unit: Chinese Yuan|
-|Net capital inflows|Recode the platform’s (Capital inflows - Capital outflows). Unit: Chinese Yuan.|
-|The closing price of treasury bonds repurchase in 7 days.|The closing price of treasury bonds repurchase in 7 days. Price: APR; Unit: %.|
-|One day term weighted interbank rates|The weighted interbank rates in inter-bank market. Unit: %.|
-|Overnight SHIBOR|Short-term interest rates among banks lending to each other applicable. Unit: %.|
-|Closing price of Shanghai Stock Exchange.|Everyday’s closing price of Shanghai Stock Exchange|
-|Growth enterprise market(GEM) index|The weighted average of the total shares in the GEM, regarding the starting date as Datum point.|
+Five-day incrase rate (%) of trading volume of the platform.
 
 **Critical to Satisfaction (linkage to customer):**
 
-Individual investors and finance companies are two major types of our clients. They are interested in this problem because both of them would like to see an increase in increase rate of the trading volumn, so that they can benefit from this process.
+Individual investors and companies with financing needs are two major types of our clients. They are interested in Five-day incrase rate (%); because an relatively high five-day increase rate of the trading volumn can result financial products of lower prices, therefore individual investors can earn more money and companies looking for finance can save more money.
 
 **Defect Definition (include opportunity):**
 
-Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project.  We should avoid low increase rate, thus we regard the increase rate lower than -10% as defect.
+Any five-day increase rate less than 0.83% is regarded as a defective value. Currently, there are around 15% defective values.
 
 **Scope of Project:**
 
 The project focuses on the first two quarters of 2016, from January 1, 2016 to June 30, 2016. The data is collected at April 20, 2016 from the database of the company, thus we scope this project from January 1 to April 20. The data set includes all the infomation we need for weekdays, which means 74 observations.
+
 
 
 
