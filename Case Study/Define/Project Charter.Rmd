@@ -7,7 +7,7 @@ output: html_document
 
 #### Problem Statement:
 
-Trading volume reflects the status of operation of the P2P company objectively. This problem happens on each workday in a three-month period started from January 4, 2016. Considering the issue of confidential policy, we can only collect the data of 3 months. As a result, it is reasonable to assume that we are at the end of the date that the data is collected to do the project. Our project is based on observational data, so we can hardly get a cause-and-effect conclusion. Beside, as the data only covers three months, we cannot find solution considering seasonal variation. 
+The increase rate of trading volume reflects the status of operation of a internet finance company objectively. Our project started since This problem happens on each workday in a three-month period started from January 4, 2016. Considering the issue of confidential policy, we can only collect the data of 3 months. As a result, it is reasonable to assume that we are at the end of the date that the data is collected to do the project. Our project is based on observational data, so we can hardly get a cause-and-effect conclusion. Beside, as the data only covers three months, we cannot find solution considering seasonal variation. 
 
 > It would be good to capture the trading volume as it is today – how many shares? how many companies? What is the rate of increase?  What is the desired rate?, …  Can you tell me what a defect is?
 
