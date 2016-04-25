@@ -30,11 +30,11 @@ Increase the five-day increase rate of the trading volume from *1.04%* to the *1
 
 **Critical to Satisfaction (linkage to customer):**
 
-Individual investors and companies with financing needs are two major types of our clients. An relatively high proportion of defective values (five-day incrase rate of trading volume less than 0.83%) can result financial products of higher prices, therefore individual investors would earn less money and companies looking for finance would waste more money. Furthermore, it might lead to a reduction in benifit of the internet finance company.
+Individual investors and companies with financing needs are two major types of our clients. An relatively high proportion of defective values (five-day incrase rate of trading volume less than 0.83%) can result financial products of higher prices, therefore individual investors would earn less money and customer companies looking for finance would spend more money. Furthermore, it might lead to a reduction in benifit of the internet finance company.
 
 **Defect Definition (include opportunity):**
 
-Any five-day increase rate less than 0.83% is regarded as a defective value, which can result financial products of higher prices, therefore individual investors would earn less money and companies looking for finance would waste more money. Furthermore, it might lead to a reduction in benifit of the internet finance company. We assume that the criteria value (0.83%) is a constant in the scope of our project.
+Any five-day increase rate less than 0.83% is regarded as a defective value, which can result financial products of higher prices, therefore individual investors would earn less money and customer companies would spend more money. Furthermore, it might lead to a reduction in benifit of the internet finance company. We assume that the criteria value (0.83%) is a constant in the scope of our project.
 
 **Scope of Project:**
 
