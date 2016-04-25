@@ -9,13 +9,13 @@ output: html_document
 
 *Why is it important to solve this problem? Why is it important to improve this process? Formulate in terms of expected benefits* 
 
-A high percentage of five-day increase rate of trading volumn which is less than 0.83% can result financial products of higher prices, and thus investors would earn less. Solving this problem would not only benefit the investors, but also the internet finance company.
+A high proportion of defective values (five-day increase rate of trading volumn less than 0.83%) can result to financial products of our company to higher prices; furthermore, investors would earn less and custmoer companies looking for finance would spend more money. Solving this problem can benefit the investors and custmoer companies.
 
 #### Who?
 
 *Who is involved in the process? Who is affected by the problem? Who is interested in solving the problem?*
 
-Individual investors and companies with finance needs are involoved in this process. Low five-day increase rate would cause individual investors earn less and the companies would waste more money.
+Individual investors and custmor companies are involoved in this process. Low five-day increase rate would cause individual investors earn less and the companies would spend more money.
 
 #### Where?
 
@@ -27,22 +27,22 @@ This problem is located in the process of operation and in the financial market.
 
 *When did or does the problem happen? How often did or does the problem happen? When did the problem start?*
 
-This problem happens on each workday. The problem exists along with the company; so it started since the company established. However, as our project started on January 1, 2016, we treat the problem starting on that day.
+The opportunity has been exist since November of 2015 and is detected by the Operation Executive Offiecer (OEO) of the company. This kind of issues happed when the strategies are no longer appropriate for the financail market. 
 
 #### What?
 
 *What is the defect? What activities, parts and procedures are involved? What happens, when the problems occur?*
 
-Any five-day increase rate less than 0.83% is regarded as a defective value, which can result financial products of higher prices, therefore individual investors would eran less money and companies looking for finance would waste more money. Furthermore, it might lead to a reduction in benefit of the internet finance company.
+Any five-day increase rate less than 0.83% is regarded as a defective value, which can result financial products of higher prices, therefore individual investors would eran less money and customer companies looking for finance would spend more money. Furthermore, it might lead to a reduction in benefit of the internet finance company.
 
 #### How?
 
 *How do you know it is a problem? How was the problem identified? How often does it happen?*
 
-It is a problem for that it can lead to low increase rate of the trading volume. It is defined as no effective reaction or response to the fluctuation of the finance market. The problem happening follows the periods of the strategies; as a result, it can happen every day. 
+Operation Executive Offiecer (OEO) detected this is a problem and assigned tasks to our team. It is a problem for that it can lead to low increase rate of the trading volume. It is defined as no effective reaction or response to the fluctuation of the finance market. The problem happening follows the periods of the strategies and the fluctuation of the financial market. 
 
 #### How many?
 
 *How many defects/units/people? How much money was spent? Do these numbers change or do they stay the same?*
 
-In the case of the project, the factor of financial products of the company and the the factor of company funds can lead to the defects. The money spent is hard to determined. The number of defects is relatively constant, for the whole financial environment is pretty mild. 
+Only one defect but related all individual investors and all custmor companies in this project. The number of investors and companies vary based on the significance of the defect. As the compeny is a internet finance compay, the money spent is a kind of strategy and in high frequency. 
