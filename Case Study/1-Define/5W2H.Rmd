@@ -2,7 +2,7 @@
 title: "5W2H"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "April 21, 2016"
-output: html_document
+output: pdf_document
 ---
 
 #### Why?
