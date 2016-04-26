@@ -1,0 +1,13 @@
+---
+title: "Analyze Check List"
+author: "Enqun Wang"
+date: "April 25, 2016"
+output: html_document
+---
+
+- Exploratory Data Analysis
+
+- Hypothesis Testing
+
+- Optional (Based on Project)
+• FMEA
