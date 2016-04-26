@@ -1,0 +1,13 @@
+---
+title: "Control Check List"
+author: "Enqun Wang"
+date: "April 25, 2016"
+output: html_document
+---
+
+- Control Plan
+
+- SPC
+
+- Optional (Based on Project)
+• 5-S
