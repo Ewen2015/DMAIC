@@ -1,8 +1,4 @@
----
-title: "Define Check List"
-author: "Enqun Wang"
-date: "April 25, 2016"
----
+#### Define Check List
 
 - [x] Project Charter
 - [x] 5W2H
