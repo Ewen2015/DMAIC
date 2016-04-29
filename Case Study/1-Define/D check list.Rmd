@@ -11,7 +11,7 @@ output: html_document
 
 - Thought Process Map / Tool Progress Report $\checkmark$ 
 
-- CT Tree
+- CT Tree $\checkmark$ 
 
 - S-I-P-O-C
 
