@@ -14,6 +14,6 @@ Data from January throughout April, 2016, from an internet finance company, refl
 
 ### Project Objective
 
-Increase the five-day increase rate of the trading volume from *1.04%* to the *1.10%* by the end of the second quarter (June 30, 2016); therefore the proportion of defective values drop from *15%* to *9%* (*67%* improvement), given the normality with constant variance assumption.
+Reduce the proportion of defective values from *15%* to *9%* (*67%* improvement) by the end of the second quarter (June 30, 2016), given the normality with constant variance assumption. That is equivalent to increase the five-day increase rate of the trading volume from *1.04%* to the *1.10%*.
 
 
