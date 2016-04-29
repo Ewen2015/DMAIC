@@ -9,7 +9,7 @@ output: html_document
 
 - 5W2H $\checkmark$ 
 
-- Thought Process Map / Tool Progress Report
+- Thought Process Map / Tool Progress Report $\checkmark$ 
 
 - CT Tree
 
