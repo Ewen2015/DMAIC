@@ -7,14 +7,15 @@
 - [x] Thought Process Map
 - [x] CT Tree
 - [x] S-I-P-O-C
-- [ ] Optional (Based on Project) Pareto Chart
+- [ ] Optional (Based on Project) 
+• Pareto Chart
 
 #### Measure
 
-- [ ] Process Flow Map
+- [x] Process Flow Map
 - [ ] C&E Diagram
-- [ ] Run Chart
-- [ ] Process Capability Analysis
+- [x] Run Chart
+- [x] Process Capability Analysis
 - [ ] Optional (Based on Project)
 • Value Stream Map
 • Muda identification
