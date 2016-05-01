@@ -47,4 +47,3 @@ lines(x, dnorm(x, goal, sd.IR), col = "blue")
 
 
 
-

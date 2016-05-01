@@ -4,10 +4,10 @@
 - [x] 5W2H
 - [x] Thought Process Map
 - [x] CT Tree
-- [ ] S-I-P-O-C
+- [x] S-I-P-O-C
 - [ ] Optional (Based on Project) Pareto Chart
 
-#### Recommend Tools:
+#### Recommended Tools:
 
-- <a href="https://www.lucidchart.com/">Lucidchart</a>
-- <a href="https://www.edrawsoft.com/">Edraw</a>
+- An online diagram application: <a href="https://www.lucidchart.com/">Lucidchart</a>.
+- A cross-platform diagram software: <a href="https://www.edrawsoft.com/">Edraw</a>.
