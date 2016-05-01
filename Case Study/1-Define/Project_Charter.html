@@ -62,6 +62,9 @@ h5 {
 h6 {
   font-size: 12px;
 }
+.table th:not([align]) {
+  text-align: left;
+}
 </style>
 
 
@@ -126,7 +129,7 @@ $(document).ready(function () {
 </div>
 <div id="project-objective" class="section level3">
 <h3>Project Objective</h3>
-<p>Increase the five-day increase rate of the trading volume from <em>1.04%</em> to the <em>1.10%</em> by the end of the second quarter (June 30, 2016); therefore the proportion of defective values drop from <em>15%</em> to <em>9%</em> (<em>67%</em> improvement), given the normality with constant variance assumption.</p>
+<p>Reduce the proportion of defective values from <em>15%</em> to <em>9%</em> (<em>67%</em> improvement) by the end of the second quarter (June 30, 2016), given the normality with constant variance assumption. That is equivalent to increase the five-day increase rate of the trading volume from <em>1.04%</em> to the <em>1.10%</em>.</p>
 </div>
 <div id="project-team" class="section level3">
 <h3>Project Team</h3>
@@ -171,7 +174,6 @@ $(document).ready(function () {
 <h3>Project Definition and Scoping</h3>
 <p><strong>Metrics (unit of measure):</strong></p>
 <ul>
-<li>The five-day incrase rate (%) of trading volume.</li>
 <li>The percentage (%) of defective values (five-day incrase rate of trading volume less than 0.83%).</li>
 </ul>
 <p><strong>Critical to Satisfaction (linkage to customer):</strong></p>
