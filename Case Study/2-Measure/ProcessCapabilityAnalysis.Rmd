@@ -13,7 +13,6 @@ setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
 require(dplyr)
 
 df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-1])
-df <- tbl_df(df)
 
 lsl = 0.2
 usl = 2.3

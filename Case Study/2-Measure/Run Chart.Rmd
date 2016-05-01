@@ -1,0 +1,29 @@
+---
+title: "Run Chart"
+author: "Enqun Wang"
+date: "May 1, 2016"
+output: pdf_document
+---
+
+#### Run Chart
+
+```{r message=F}
+setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
+df = data.frame(read.csv("data.csv", header = T)[-c(1:4),])
+
+require(ggplot2)
+
+summary(df$Increase.Rate.5Day)
+
+plot.ts(df$Increase.Rate.5Day)
+grid()
+
+hist(df$Increase.Rate.5Day, freq = F, col = "lightBlue")
+lines(density(df$Increase.Rate.5Day), col = "red3")
+grid()
+
+qqnorm(df$Increase.Rate.5Day)
+qqline(df$Increase.Rate.5Day, col = "red3")
+grid()
+```
+
