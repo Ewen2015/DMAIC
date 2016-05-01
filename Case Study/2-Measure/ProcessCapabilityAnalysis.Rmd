@@ -1,0 +1,29 @@
+---
+title: "Process Capability Analysis"
+author: "Enqun Wang"
+date: "May 1, 2016"
+output: pdf_document
+---
+
+#### Process Capability Analysis
+
+```{r message=F}
+setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
+
+require(dplyr)
+
+df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-1])
+df <- tbl_df(df)
+
+lsl = 0
+usl = 2.5
+target = 1.10
+
+require(qcc) # Quality Control Charts
+
+ir5d <- qcc.groups(df$Increase.Rate.5Day, rep(1, length(df$Increase.Rate.5Day)))
+object = qcc(ir5d, type = "xbar")
+process.capability(object, spec.limits = c(lsl, usl), target = target)
+
+citation("qcc")
+```
