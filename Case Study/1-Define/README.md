@@ -9,5 +9,5 @@
 
 #### Recommended Tools:
 
-- A online diagram application: <a href="https://www.lucidchart.com/">Lucidchart</a>.
+- An online diagram application: <a href="https://www.lucidchart.com/">Lucidchart</a>.
 - A cross-platform diagram software: <a href="https://www.edrawsoft.com/">Edraw</a>.
