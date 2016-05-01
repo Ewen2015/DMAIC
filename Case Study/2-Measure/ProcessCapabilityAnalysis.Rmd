@@ -2,7 +2,7 @@
 title: "Process Capability Analysis"
 author: "Enqun Wang"
 date: "May 1, 2016"
-output: html_document
+output: pdf_document
 ---
 
 #### Process Capability Analysis
@@ -15,8 +15,8 @@ require(dplyr)
 df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-1])
 df <- tbl_df(df)
 
-lsl = 0
-usl = 2.5
+lsl = 0.2
+usl = 2.3
 target = 1.10
 
 require(qcc) # Quality Control Charts
