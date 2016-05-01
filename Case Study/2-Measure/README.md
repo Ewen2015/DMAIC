@@ -2,8 +2,8 @@
 
 - [ ] Process Flow Map
 - [ ] C&E Diagram
-- [ ] Run Chart
-- [ ] Process Capability Analysis
+- [x] Run Chart
+- [x] Process Capability Analysis
 - [ ] Optional (Based on Project)
 • Value Stream Map
 • Muda identification
