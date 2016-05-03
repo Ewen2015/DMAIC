@@ -1,6 +1,6 @@
 #### Mesure Check List
 
-- [ ] Process Flow Map
+- [x] Process Flow Map
 - [ ] C&E Diagram
 - [x] Run Chart
 - [x] Process Capability Analysis
