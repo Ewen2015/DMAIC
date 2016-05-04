@@ -13,7 +13,7 @@
 #### Measure
 
 - [x] Process Flow Map
-- [ ] C&E Diagram
+- [x] C&E Diagram
 - [x] Run Chart
 - [x] Process Capability Analysis
 - [ ] Optional (Based on Project)
