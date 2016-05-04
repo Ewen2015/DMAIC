@@ -11,19 +11,14 @@ output: pdf_document
 setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
 df = data.frame(read.csv("data.csv", header = T)[-c(1:4),])
 
-require(ggplot2)
-
-summary(df$Increase.Rate.5Day)
-
-plot.ts(df$Increase.Rate.5Day)
-grid()
-
-hist(df$Increase.Rate.5Day, freq = F, col = "lightBlue")
-lines(density(df$Increase.Rate.5Day), col = "red3")
-grid()
-
-qqnorm(df$Increase.Rate.5Day)
-qqline(df$Increase.Rate.5Day, col = "red3")
-grid()
+require(lessR)
+LineChart(Increase.Rate.5Day, data = df)
 ```
+
+- The run chart indicates oscillating patterns. Oscillation occurs when the data fluctuates up and down, indicating that the process is not steady. However, this is the common situation in the finance field. 
+
+
+
+
+
 
