@@ -1,0 +1,49 @@
+---
+title: "Exploratory Data Analysis"
+author: "Enqun Wang"
+date: "April 23, 2016"
+output: html_document
+---
+
+#### Input the data
+
+```{r message=FALSE}
+setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
+
+require(dplyr)
+
+df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-1])
+df <- tbl_df(df)
+glimpse(df)
+```
+
+#### Defect, Baseline and Goal
+
+```{r}
+summary(df$Increase.Rate.5Day)
+
+defect.value = quantile(df$Increase.Rate.5Day, 0.15)
+
+baseline.IR = mean(df$Increase.Rate.5Day)
+sd.IR = sd(df$Increase.Rate.5Day)
+
+baseline.defect = sum(df$Increase.Rate.5Day < defect.value)/sum(df$Increase.Rate.5Day)
+
+goal = 1.10
+goal.defect = pnorm(defect.value, goal, sd.IR)
+
+improvement = (baseline.defect - goal.defect)/goal.defect
+
+hist(df$Increase.Rate.5Day, br = 30, freq = F)
+x = seq(-0.65, 1.65, 0.01)
+lines(x, dnorm(x, baseline.IR, sd.IR), col = "green")
+abline(v = defect.value, col = "red")
+lines(x, dnorm(x, goal, sd.IR), col = "blue")
+```
+
+
+
+
+
+
+
