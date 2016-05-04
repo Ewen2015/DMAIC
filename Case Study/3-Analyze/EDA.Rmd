@@ -2,7 +2,7 @@
 title: "Eexploratory Data Analysis"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "May 3, 2016"
-output: pdf_document
+output: html_document
 ---
 
 #### Input the data
@@ -102,6 +102,36 @@ ggplot(meltdf,aes(x=date,y=value,colour=variable,group=variable)) +
 ```
 
 According to the plots above and VOC, we would remove the variable `SHIBOR` and `SHA`.
+
+#### Density plots
+
+```{r}
+require(gridExtra)
+require(ggplot2)
+
+p1 <- ggplot(X, aes(x = X$trans.Rate.of.Return))+
+  geom_density()
+p2 <- ggplot(X, aes(x = X$trans.Term))+
+  geom_density()
+p3 <- ggplot(X, aes(x = X$trans.TZD.Account))+
+  geom_density()
+
+p4 <- ggplot(X, aes(x = X$trans.Balance))+
+  geom_density()
+p5 <- ggplot(X, aes(x = X$trans.Capital.Inflow))+
+  geom_density()
+
+p6 <- ggplot(X, aes(x = X$trans.LB.Received))+
+  geom_density()
+p7 <- ggplot(X, aes(x = X$trans.LB.Used))+
+  geom_density()
+
+p8 <- ggplot(X, aes(x = X$trans.R.007))+
+  geom_density()
+
+grid.arrange(p1, p2, p3, p4,
+             p5, p6, p7, p8, ncol=4)
+```
 
 #### First selection of variables
 
