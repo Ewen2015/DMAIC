@@ -5,3 +5,25 @@ date: "May 3, 2016"
 output: html_document
 ---
 
+According to the exploratory data analysis, we decide to first elect variables as follows,
+
+- Product Factor:
+
+1. Rate of Return
+2. Term
+3. TZD Account
+
+- Promotion Factor:
+
+1. LB Received
+2. LB Used
+
+- Platform Factor:
+
+1. Balance
+2. Capital Inflow
+
+- Market Factor:
+
+1. R.007
+
