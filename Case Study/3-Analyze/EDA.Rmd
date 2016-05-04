@@ -28,6 +28,15 @@ y = predictorsTrans[,1]
 trans.df = data.frame(data = df[,1], y, X)
 ```
 
+Based on cause and effect relationship, we divide the variales into four causes.
+
+```{r}
+X.market = X[, c(8, 10, 11, 12)]
+X.product = X[, c(1, 2, 5, 6)]
+X.promotion = X[, c(7, 8)]
+X.platform = X[, c(3, 4)]
+```
+
 #### Detect dependent variables
 
 ```{r}
@@ -49,7 +58,10 @@ panel.cor <- function(x, y, digits = 2, cex.cor, ...) {
   text(0.5, 0.4, txt2)
 }
 
-pairs(X, pch = 19, upper.panel = panel.cor)
+pairs(X.product, pch = 19, upper.panel = panel.cor)
+pairs(X.promotion, pch = 19, upper.panel = panel.cor)
+pairs(X.platform, pch = 19, upper.panel = panel.cor)
+pairs(X.market, pch = 19, upper.panel = panel.cor)
 ```
 
 According to the correlation plot above, we find that `interbank.Rate` , `SHIBOR`, `SHA`, and `GEM` are highly correlated. So we consider if we could remove some of them. 
