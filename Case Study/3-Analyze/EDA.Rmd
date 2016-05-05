@@ -1,8 +1,8 @@
 ---
 title: "Eexploratory Data Analysis"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
-date: "May 3, 2016"
-output: html_document
+date: "April 25, 2016"
+output: pdf_document
 ---
 
 #### Input the data
