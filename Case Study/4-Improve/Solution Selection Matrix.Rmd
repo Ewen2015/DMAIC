@@ -16,15 +16,23 @@ output: pdf_document
 |TZD Account | A measurement of a find of financial product (TZD) of the platform|
 |R007 | The closing price of treasury bonds repurchase in 7 days|
 
-#### Solution Selection Matrix
+#### Solution for Causes or Influence Factors
 
-|Variables |Explaination |
+|Variables |Solutions |
 |------------|------------------------------------------------|
 |Capital Inflow | |
 |LB Recevied | |
 |TZD Account | |
 |R007 | |
 
+#### Solution Matrix
+
+|Solutions |Capital Inflow |LB Recevied |TZD Account |R007 |
+|------------------------------------------------|--|--|--|--|
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
 
 
 
