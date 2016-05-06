@@ -1,7 +1,7 @@
 ---
 title: "Solution Selection Matrix"
-author: "Enqun Wang"
-date: "May 6, 2016"
+author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
+date: "April 27, 2016"
 output: pdf_document
 ---
 
@@ -13,26 +13,26 @@ output: pdf_document
 |------------|------------------------------------------------|
 |Capital Inflow |Recode the platform’s (Capital inflows - Capital outflows)|
 |LB Recevied | Recode the amount of users’ receiving lucky money of the day|
-|TZD Account | A measurement of a find of financial product (TZD) of the platform|
-|R007 | The closing price of treasury bonds repurchase in 7 days|
+|TZD Account | A measurement of a kind of financial product (TZD) of the platform|
+|R007 | The closing price of treasury bond repurchase in 7 days|
 
 #### Solution for Causes or Influence Factors
 
-|Variables |Solutions |
-|------------|------------------------------------------------|
-|Capital Inflow | |
-|LB Recevied | |
-|TZD Account | |
-|R007 | |
+|Variables |Strategies |
+|-------------------------------|-------------------------------------------|
+|LB Recevied: defective is affected by the expiration of the bonus lucky bag received|To decrease our defect rate of five-day increase rate of trading volume, shorten the expiration days of lucky bags.|
+|TZD Account: the account balance is dependent on the attractive of the product. |To improve the account balance, we may keep improvng ability of innovation and develop more competitive products. |
+
 
 #### Solution Matrix
 
 |Solutions |Capital Inflow |LB Recevied |TZD Account |R007 |
-|------------------------------------------------|--|--|--|--|
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+|------------------------------------------------|------|------|------|------|
+|Settle rate of return of financial products reasonable |$\checkmark$ | |$\checkmark$ | |
+|develop more competitive products |$\checkmark$ |$\checkmark$ |$\checkmark$ | |
+|Make advertisements to attrack more users |$\checkmark$ |$\checkmark$ | | |
+|Concern the financial market and establish coping mechanisms |$\checkmark$ | | |$\checkmark$ |
+|Improve the study about macroeconomic regulatory | | | |$\checkmark$ |
 
 
 
