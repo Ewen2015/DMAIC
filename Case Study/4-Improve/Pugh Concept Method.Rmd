@@ -1,0 +1,21 @@
+---
+title: "Pugh Concept Matrix"
+author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
+date: "May 6, 2016"
+output: html_document
+---
+
+
+|Criteria|Rating (1-10)|Reset RR|Develop Products|Advertisements|Improve Coping Mechanisms|
+|-------------------|---|-----|-----|-----|-----|
+|Cost of Price|10|+|S|-|S|
+|Customer Satisfaction|10|S|+|+|S|
+|Benefit|10|S|+|+|+|
+|Period|4|-|-|+|S|
+|Efficiency|7|S|S|+|+|
+|||||||
+|Weighted Sum of Positive||10|20|31|20|
+|Weighted Sum of Negative||4|4|10|0|
+|Weighted Score||6|16|21|20|
+
+Develop Products, Advertisements, and Improve Coping Mechanisms are the selected concepts.
