@@ -1,13 +1,13 @@
 ---
 title: "Pugh Concept Matrix"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
-date: "May 6, 2016"
+date: "May 4, 2016"
 output: html_document
 ---
 
 
 |Criteria|Rating (1-10)|Reset RR|Develop Products|Advertisements|Improve Coping Mechanisms|
-|-------------------|---|-----|-----|-----|-----|
+|-------------|------|-------|-------|-----------|------------|
 |Cost of Price|10|+|S|-|S|
 |Customer Satisfaction|10|S|+|+|S|
 |Benefit|10|S|+|+|+|
