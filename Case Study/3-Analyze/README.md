@@ -1,6 +1,6 @@
 #### Analyze Check List
 
 - [x] Exploratory Data Analysis
-- [ ] Hypothesis Testing
+- [x] Hypothesis Testing
 - [ ] Optional (Based on Project)
 • FMEA
