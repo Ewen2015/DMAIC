@@ -26,15 +26,15 @@
 #### Analyze
 
 - [x] Exploratory Data Analysis
-- [ ] Hypothesis Testing
+- [x] Hypothesis Testing
 - [ ] Optional (Based on Project)
 • FMEA
 
 #### Improve
 
 - [ ] Pugh Concept Matrix
-- [ ] Solution Selection Matrix
-- [ ] Design of Experiments:
+- [x] Solution Selection Matrix
+- [ ] Design of Experiments
 - [ ] Full or Fractional Factorial Design
 - [ ] Optional (Based on Project)
 • Poke Yoke

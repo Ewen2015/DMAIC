@@ -20,7 +20,7 @@ According to the exploratory data analysis, we decide to first elect variables a
 
 
 ```{r message=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
-setwd("/Users/zhouyiyan/Documents/STAA568 Topics in Industrial Organizational Statistics/DMAIC/Case Study/3-Analyze")
+setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
 
 require(dplyr)
 

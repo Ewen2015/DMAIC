@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Enqun Wang" />
+<meta name="author" content="Enqun Wang (EW), Yiyan Zhou (YZ)" />
 
 <meta name="date" content="2016-04-26" />
 
@@ -117,12 +117,14 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Hypothesis Testing</h1>
-<h4 class="author"><em>Enqun Wang</em></h4>
+<h4 class="author"><em>Enqun Wang (EW), Yiyan Zhou (YZ)</em></h4>
 <h4 class="date"><em>April 26, 2016</em></h4>
 
 </div>
 
 
+<div id="exploratory-data-analysis" class="section level4">
+<h4>Exploratory Data Analysis</h4>
 <p>According to the exploratory data analysis, we decide to first elect variables as follows,</p>
 <table>
 <thead>
@@ -154,6 +156,228 @@ $(document).ready(function () {
 </tr>
 </tbody>
 </table>
+<p>We use the centered data to test the significance of the variables, and find the significant ones.</p>
+<ol style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ Rate.of.Return</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.Rate.of.Return)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.8454 -0.7421 -0.1314  0.6312  3.4207 
+## 
+## Coefficients:
+##                           Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)              8.331e-19  1.155e-01   0.000    1.000
+## df$trans.Rate.of.Return -5.334e-03  1.162e-01  -0.046    0.964
+## 
+## Residual standard error: 1.007 on 74 degrees of freedom
+## Multiple R-squared:  2.845e-05,  Adjusted R-squared:  -0.01348 
+## F-statistic: 0.002106 on 1 and 74 DF,  p-value: 0.9635</code></pre>
+<p>The p value of the test is 0.9635, which is greater than 0.05. We should not reject the null hypothesis and conclude that the coefficient of Rate.of.Return is not significant.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ Term</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.Term)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.7531 -0.7831 -0.1170  0.6342  3.1287 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)    2.550e-17  1.141e-01   0.000    1.000
+## df$trans.Term -1.564e-01  1.148e-01  -1.362    0.177
+## 
+## Residual standard error: 0.9943 on 74 degrees of freedom
+## Multiple R-squared:  0.02445,    Adjusted R-squared:  0.01127 
+## F-statistic: 1.855 on 1 and 74 DF,  p-value: 0.1773</code></pre>
+<p>The p value of the test is 0.1773, which is greater than 0.05. We should not reject the null hypothesis and conclude that the coefficient of Term is not significant.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ TZD.Account</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.TZD.Account)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.7776 -0.7596 -0.0298  0.5272  3.3339 
+## 
+## Coefficients:
+##                        Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)           6.943e-17  1.102e-01   0.000  1.00000   
+## df$trans.TZD.Account -2.976e-01  1.110e-01  -2.682  0.00903 **
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.9611 on 74 degrees of freedom
+## Multiple R-squared:  0.08857,    Adjusted R-squared:  0.07625 
+## F-statistic: 7.191 on 1 and 74 DF,  p-value: 0.009031</code></pre>
+<p>The p value of the test is 0.009031, which is less than 0.05. We should reject the null hypothesis and conclude that the coefficient of TZD.Account is significant.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ LB.Received</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.LB.Received)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.7086 -0.8061 -0.1410  0.6606  3.2724 
+## 
+## Coefficients:
+##                        Estimate Std. Error t value Pr(&gt;|t|)  
+## (Intercept)           5.240e-17  1.129e-01   0.000    1.000  
+## df$trans.LB.Received -2.098e-01  1.137e-01  -1.846    0.069 .
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.9843 on 74 degrees of freedom
+## Multiple R-squared:  0.044,  Adjusted R-squared:  0.03108 
+## F-statistic: 3.406 on 1 and 74 DF,  p-value: 0.06896</code></pre>
+<p>The p value of the test is 0.04645, which is less than 0.05. We should reject the null hypothesis and conclude that the coefficient of LB.Received is significant.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ LB.Used</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.LB.Used)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.7526 -0.7464 -0.1423  0.6034  3.4414 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)      -1.926e-17  1.148e-01   0.000    1.000
+## df$trans.LB.Used  1.066e-01  1.156e-01   0.922    0.359
+## 
+## Residual standard error: 1.001 on 74 degrees of freedom
+## Multiple R-squared:  0.01136,    Adjusted R-squared:  -0.001997 
+## F-statistic: 0.8505 on 1 and 74 DF,  p-value: 0.3594</code></pre>
+<p>The p value of the test is 0.1695, which is greater than 0.05. We should not reject the null hypothesis and conclude that the coefficient of LB.Used is not significant.</p>
+<ol start="6" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ Balance</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.Balance)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.8752 -0.7416 -0.1388  0.6520  3.3705 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)      -1.082e-17  1.154e-01   0.000    1.000
+## df$trans.Balance  3.499e-02  1.162e-01   0.301    0.764
+## 
+## Residual standard error: 1.006 on 74 degrees of freedom
+## Multiple R-squared:  0.001224,   Adjusted R-squared:  -0.01227 
+## F-statistic: 0.0907 on 1 and 74 DF,  p-value: 0.7641</code></pre>
+<p>The p value of the test is 0.8785, which is greater than 0.05. We should not reject the null hypothesis and conclude that the coefficient of Balanec is not significant.</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ Capital.Inflow</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.Capital.Inflow)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.6154 -0.7388 -0.0793  0.6976  2.1425 
+## 
+## Coefficients:
+##                           Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)             -2.907e-17  1.034e-01   0.000        1    
+## df$trans.Capital.Inflow  4.457e-01  1.041e-01   4.283 5.47e-05 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.9012 on 74 degrees of freedom
+## Multiple R-squared:  0.1986, Adjusted R-squared:  0.1878 
+## F-statistic: 18.34 on 1 and 74 DF,  p-value: 5.467e-05</code></pre>
+<p>The p value of the test is 5.467e-05, which is less than 0.05. We should reject the null hypothesis and conclude that the coefficient of Capital.Inflow is significant.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Increase.Rate.5Day ~ R.007</li>
+</ol>
+<pre><code>## 
+## Call:
+## lm(formula = df$trans.Increase.Rate.5Day ~ df$trans.R.007)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.62852 -0.78853 -0.06729  0.70667  3.14317 
+## 
+## Coefficients:
+##                  Estimate Std. Error t value Pr(&gt;|t|)  
+## (Intercept)    -6.368e-18  1.113e-01   0.000   1.0000  
+## df$trans.R.007 -2.678e-01  1.120e-01  -2.391   0.0194 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.97 on 74 degrees of freedom
+## Multiple R-squared:  0.07169,    Adjusted R-squared:  0.05915 
+## F-statistic: 5.715 on 1 and 74 DF,  p-value: 0.01936</code></pre>
+<p>The p value of the test is 0.03061, which is less than 0.05. We should reject the null hypothesis and conclude that the coefficient of R.007 is significant.</p>
+<p>To sum up, LB.Received, Capital.Inflow, TZD.Account and R.007 are four significant variables.</p>
+<p>Considering the above four significant the variables, we do model selection by forward stepwise.</p>
+<pre><code>## Subset selection object
+## Call: regsubsets.formula(df$trans.Increase.Rate.5Day ~ df$trans.LB.Received + 
+##     df$trans.Capital.Inflow + df$trans.TZD.Account + df$trans.R.007, 
+##     data = df, method = &quot;forward&quot;)
+## 4 Variables  (and intercept)
+##                         Forced in Forced out
+## df$trans.LB.Received        FALSE      FALSE
+## df$trans.Capital.Inflow     FALSE      FALSE
+## df$trans.TZD.Account        FALSE      FALSE
+## df$trans.R.007              FALSE      FALSE
+## 1 subsets of each size up to 4
+## Selection Algorithm: forward
+##          df$trans.LB.Received df$trans.Capital.Inflow df$trans.TZD.Account
+## 1  ( 1 ) &quot; &quot;                  &quot;*&quot;                     &quot; &quot;                 
+## 2  ( 1 ) &quot; &quot;                  &quot;*&quot;                     &quot;*&quot;                 
+## 3  ( 1 ) &quot;*&quot;                  &quot;*&quot;                     &quot;*&quot;                 
+## 4  ( 1 ) &quot;*&quot;                  &quot;*&quot;                     &quot;*&quot;                 
+##          df$trans.R.007
+## 1  ( 1 ) &quot; &quot;           
+## 2  ( 1 ) &quot; &quot;           
+## 3  ( 1 ) &quot; &quot;           
+## 4  ( 1 ) &quot;*&quot;</code></pre>
+<p>It seems that the capital inflow is the most significent. We can now select the best model based on the voice of customer.</p>
+<p>The importance of the four variables are as followed:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Importance</th>
+<th align="left">Variable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">Capital Inflow</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">Lucky Bag Received</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">R 007</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">The Financial Product TZD Account</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
