@@ -1,8 +1,8 @@
 ---
 title: "Pugh Concept Matrix"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
-date: "May 4, 2016"
-output: html_document
+date: "April 27, 2016"
+output: pdf_document
 ---
 
 
