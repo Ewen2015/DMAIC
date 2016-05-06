@@ -15,8 +15,6 @@ According to the exploratory data analysis, we decide to first elect variables a
 |2. Term |2. LB Used |2. Capital Inflow | |
 |3. TZD Account| | | |
 
-
-
 ```{r message=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
 setwd("/Users/zhouyiyan/Documents/STAA568 Topics in Industrial Organizational Statistics/DMAIC/Case Study/3-Analyze")
 
