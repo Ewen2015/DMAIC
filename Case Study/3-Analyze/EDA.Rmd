@@ -2,26 +2,22 @@
 title: "Eexploratory Data Analysis"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "April 25, 2016"
-output: pdf_document
+output: html_document
 ---
 
-#### Input the data
-
-```{r message=FALSE}
+```{r message=FALSE, echo=FALSE}
 setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
-
-require(dplyr)
 
 df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-c(2:3)])
 ```
 
 #### Preprocess data
 
-```{r}
-require(caret)
+```{r, echo=FALSE, message=F}
+require(caret, warn.conflicts = F)
 
 date = df[,1]
-trans = preProcess(df[,-1], c("BoxCox", "center", "scale"))
+trans = preProcess(df[,-1], c("center", "scale"))
 predictorsTrans = data.frame(trans = predict(trans, df[,-1]))
 
 X = predictorsTrans[,-1]
@@ -29,9 +25,19 @@ y = predictorsTrans[,1]
 trans.df = data.frame(data = df[,1], y, X)
 ```
 
-Based on cause and effect relationship, we divide the variales into four causes.
+- Based on cause and effect relationship, we divide the variales into four causes: Product Factor, Promotion Factor, Platform Factor, and Market Factor. According to voice of customer (VOC), we would analyze the influence of these factors independently, for that each one represents a different aspect.
 
-```{r}
+|Product Factor |Promotion Factor |Platform Factor |Market Factor|
+|--------|--------|--------|--------|
+|Rate of Return |LB Received |Balance |R.007 |
+|Term |LB Used |Capital Inflow | Inerbank Rate|
+|TZD Account| | |SHIBOR |
+|TZD Inflow | | |SHA |
+| | | |GEM|
+
+- In order to remove effects of different units, we centered and rescaled the data.
+
+```{r, echo=FALSE}
 X.product = X[, c(1, 2, 5, 6)]
 X.promotion = X[, c(7, 8)]
 X.platform = X[, c(3, 4)]
@@ -40,7 +46,11 @@ X.market = X[, c(9, 10, 11, 12, 13)]
 
 #### Detect dependent variables
 
-```{r}
+- According to the correlation plot above, we find that `interbank.Rate` , `SHIBOR`, `SHA`, and `GEM` are highly correlated, and that `TZD.Inflow` and `TZD.Account` are highly correlated. So we consider if we could remove some of them. 
+
+- Based on the voice of costumers (VOC), we decided to remove `interbank.Rate`, which can be represented by `SHIBOR`; remove `GEM`, which can be represented by `SHA`; and remove `TZD.Inflow`, which can be reflected from `TZD.Account`.
+
+```{r, echo=FALSE, fig.width= 8, fig.height = 4}
 panel.cor <- function(x, y, digits = 2, cex.cor, ...) {
   usr <- par("usr")
   on.exit(par(usr))
@@ -65,20 +75,18 @@ pairs(X.platform, pch = 19, upper.panel = panel.cor)
 pairs(X.market, pch = 19, upper.panel = panel.cor)
 ```
 
-According to the correlation plot above, we find that `interbank.Rate` , `SHIBOR`, `SHA`, and `GEM` are highly correlated, and that `TZD.Inflow` and `TZD.Account` are highly correlated. So we consider if we could remove some of them. 
-
-Based on the voice of costumers (VOC), we decided to remove `interbank.Rate`, which can be represented by `SHIBOR`; remove `GEM`, which can be represented by `SHA`; and remove `TZD.Inflow`, which can be reflected from `TZD.Account`.
-
-```{r}
+```{r, echo=FALSE}
 X.product = X[, c(1, 2, 6)]
 X.market = X[, c(9, 11, 12)]
 ```
 
 #### Plot multiple time series
 
-```{r}
+- According to the plots above and VOC, we would remove the variable `SHIBOR` and `SHA`.
+
+```{r, echo=FALSE, message=F, fig.width= 8, fig.height = 3}
 require(ggplot2)
-require(reshape2)
+require(reshape2, warn.conflicts = F)
 
 df.product = data.frame(date, y, X.product)
 meltdf <- melt(df.product, "date")
@@ -101,12 +109,12 @@ ggplot(meltdf,aes(x=date,y=value,colour=variable,group=variable)) +
   geom_line()
 ```
 
-According to the plots above and VOC, we would remove the variable `SHIBOR` and `SHA`.
-
 #### Density plots
 
-```{r}
-require(gridExtra)
+- To explore the distributions of the variables, we ploted density plots as follows. It indicates that `Rate of Retrun` and `LB Recevied` are not normally distributed, while others are basicly normal. 
+
+```{r, echo=FALSE, message=F, fig.width= 8, fig.height = 3}
+require(gridExtra, warn.conflicts = F)
 require(ggplot2)
 
 p1 <- ggplot(X, aes(x = X$trans.Rate.of.Return))+
@@ -135,28 +143,13 @@ grid.arrange(p1, p2, p3, p4,
 
 #### First selection of variables
 
-According to the exploratory data analysis, we decide to first elect variables as follows,
+According to the exploratory data analysis, we decide to first elect variables as follows.
 
-- Product Factor:
-
-1. Rate of Return
-2. Term
-3. TZD Account
-
-- Promotion Factor:
-
-1. LB Received
-2. LB Used
-
-- Platform Factor:
-
-1. Balance
-2. Capital Inflow
-
-- Market Factor:
-
-1. R.007
-
+|Product Factor |Promotion Factor |Platform Factor |Market Factor|
+|--------|--------|--------|--------|
+|1. Rate of Return |1. LB Received |1. Balance |1. R.007 |
+|2. Term |2. LB Used |2. Capital Inflow | |
+|3. TZD Account| | | |
 
 
 

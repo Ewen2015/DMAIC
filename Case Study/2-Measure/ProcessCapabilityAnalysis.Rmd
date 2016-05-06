@@ -2,12 +2,14 @@
 title: "Process Capability Analysis"
 author: "Enqun Wang"
 date: "April 20, 2016"
-output: html_document
+output: pdf_document
 ---
 
 #### Process Capability Analysis
 
-```{r message=F}
+- The Cp_l is 1.404, with a confidence interval (1.208, 1.6), which indicates that the process is capable.
+
+```{r message=F, echo=FALSE}
 setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
 
 require(dplyr)
@@ -25,9 +27,8 @@ object = qcc(ir5d, type = "xbar", plot = F)
 process.capability(object, spec.limits = c(lsl, usl), target = target)
 ```
 
-The Cp_l is 1.404, with a confidence interval (1.208, 1.6), which indicates that the process is capable.
 
-```{r}
+```{r, echo=FALSE}
 citation("qcc")
 ```
 

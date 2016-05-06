@@ -1,21 +1,21 @@
 ---
 title: "Run Chart"
 author: "Enqun Wang"
-date: "May 1, 2016"
+date: "April 22, 2016"
 output: pdf_document
 ---
 
 #### Run Chart
 
-```{r message=F}
+- The run chart indicates oscillating patterns. Oscillation occurs when the data fluctuates up and down, indicating that the process is not steady. However, this is the common situation in the finance field. 
+
+```{r message=F, echo=FALSE}
 setwd("/Users/ewenwang/Dropbox/Data Science/DMAIC/Case Study/3-Analyze")
 df = data.frame(read.csv("data.csv", header = T)[-c(1:4),])
 
 require(lessR)
 LineChart(Increase.Rate.5Day, data = df)
 ```
-
-- The run chart indicates oscillating patterns. Oscillation occurs when the data fluctuates up and down, indicating that the process is not steady. However, this is the common situation in the finance field. 
 
 
 
