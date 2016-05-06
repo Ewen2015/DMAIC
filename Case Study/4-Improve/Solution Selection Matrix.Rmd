@@ -5,14 +5,32 @@ date: "May 6, 2016"
 output: pdf_document
 ---
 
-#### Solutions for Proven Xs
+#### Explaination for Variables
 
-- Based on the analysis, we finaly found three variables highly correlating to the 5-day increase rate -- Capital Inflow, LB Recevied, TZD Account, and R007. 
+- Based on the analysis, we finaly found three variables highly correlating to the 5-day increase rate -- Capital Inflow, LB Recevied, TZD Account, and R007. The explaination of the variables are shown as follows.
 
-|Proven Xs |Explaination |
+|Variables |Explaination |
 |------------|------------------------------------------------|
 |Capital Inflow |Recode the platform’s (Capital inflows - Capital outflows)|
 |LB Recevied | Recode the amount of users’ receiving lucky money of the day|
 |TZD Account | A measurement of a find of financial product (TZD) of the platform|
 |R007 | The closing price of treasury bonds repurchase in 7 days|
+
+#### Solution Selection Matrix
+
+|Variables |Explaination |
+|------------|------------------------------------------------|
+|Capital Inflow | |
+|LB Recevied | |
+|TZD Account | |
+|R007 | |
+
+
+
+
+
+
+
+
+
 
